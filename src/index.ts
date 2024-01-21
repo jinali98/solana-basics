@@ -21,7 +21,7 @@ const generateKeyPair = () => {
   console.log(`The secret key is: format 2 `, base58.encode(keypair.secretKey));
 };
 
-const getKeypairFromENV = () => {
+export const getKeypairFromENV = () => {
   const keypair = getKeypairFromEnvironment("SECRET_KEY");
   //   console.log(`The public key is: `, keypair);
 
@@ -51,5 +51,4 @@ const keypair = getKeypairFromENV();
 
 console.log(`The public key is: `, keypair.publicKey.toBase58());
 
-getBalaceByAddress("Gg3V9VuCvf4cNjP4qEZKELGCkxLEX9ajYyyYr3dw3QGr");
 getBalaceByAddress(keypair.publicKey.toBase58());
