@@ -30,7 +30,7 @@ console.log(
   `✅ Loaded our own keypair, the destination public key, and connected to Solana`
 );
 
-const LAMPORTS_TO_SEND = 5000;
+const LAMPORTS_TO_SEND = 1000;
 
 // creating an intance of transaction
 const transaction = new Transaction();
